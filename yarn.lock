@@ -2463,6 +2463,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-navigation/bottom-tabs@npm:^6.0.8":
+  version: 6.0.8
+  resolution: "@react-navigation/bottom-tabs@npm:6.0.8"
+  dependencies:
+    "@react-navigation/elements": ^1.2.0
+    color: ^3.1.3
+    warn-once: ^0.1.0
+  peerDependencies:
+    "@react-navigation/native": ^6.0.0
+    react: "*"
+    react-native: "*"
+    react-native-safe-area-context: ">= 3.0.0"
+    react-native-screens: ">= 3.0.0"
+  checksum: f986d6d3b1b887ad83374b244db7b73088555853f5893e86ffceed361b02d5f4e7ab3c61cf301e66ccc6c91ac0be8106e8464be9ed847497a1a5113c6faf0e36
+  languageName: node
+  linkType: hard
+
 "@react-navigation/core@npm:^6.0.2":
   version: 6.0.2
   resolution: "@react-navigation/core@npm:6.0.2"
@@ -2487,6 +2504,18 @@ __metadata:
     react-native: "*"
     react-native-safe-area-context: ">= 3.0.0"
   checksum: a60168a150a93264b12f0650bdd0b13cc6e3634fa9661c985f7cfc9d2ca364cddd00a847328ac07c122ac998e332bdc90750d73c72301ef41bfdd9f54f39dcc7
+  languageName: node
+  linkType: hard
+
+"@react-navigation/elements@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@react-navigation/elements@npm:1.2.0"
+  peerDependencies:
+    "@react-navigation/native": ^6.0.0
+    react: "*"
+    react-native: "*"
+    react-native-safe-area-context: ">= 3.0.0"
+  checksum: 6f72094f6919c3816c9dfc5be45610a5c7199224e21abe2ab1a725ae6c59191e01917a0c092e28f9083a28913dba214372bc934260bf0c2106970a694d976c9c
   languageName: node
   linkType: hard
 
@@ -6476,18 +6505,18 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lottie-react-native@npm:^4.1.3":
-  version: 4.1.3
-  resolution: "lottie-react-native@npm:4.1.3"
+"lottie-react-native@npm:4.0.2":
+  version: 4.0.2
+  resolution: "lottie-react-native@npm:4.0.2"
   dependencies:
     invariant: ^2.2.2
     prop-types: ^15.5.10
     react-native-safe-modules: ^1.0.3
   peerDependencies:
-    lottie-ios: ^3.2.3
+    lottie-ios: ^3.1.8
     react: "*"
     react-native: ">=0.46"
-  checksum: 0f0dcd416111bae78c8e3a55578718368aeefc80201cb6fbe16962534e13b99e05839f42edb36bbbdaf836930299d7008d281ec890d9c0c7f359a42675980980
+  checksum: 622a9d77a1ef2f0df04315c159860efae447667f9009148cd2f1316b169ea212e1e56cc3f435372f5779832bc36fca6edfd32e5381719daa665a984e5867bc3a
   languageName: node
   linkType: hard
 
@@ -7929,6 +7958,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-hook-form@npm:^7.17.2":
+  version: 7.17.2
+  resolution: "react-hook-form@npm:7.17.2"
+  peerDependencies:
+    react: ^16.8.0 || ^17
+  checksum: e9481a68031f836909c1313e16616271d4ede2bb5e00d129ed44bbbe814ac317b163fd33b2a45d23e03d49daa2973e9b216e002952611e2974e156beacfadcc0
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.12.0, react-is@npm:^16.13.0, react-is@npm:^16.13.1, react-is@npm:^16.7.0, react-is@npm:^16.8.1, react-is@npm:^16.8.4":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -8393,6 +8431,7 @@ fsevents@^1.2.7:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@babel/core": ^7.9.0
+    "@react-navigation/bottom-tabs": ^6.0.8
     "@react-navigation/native": ^6.0.4
     "@react-navigation/native-stack": ^6.2.2
     "@react-navigation/stack": ^6.0.9
@@ -8406,10 +8445,11 @@ fsevents@^1.2.7:
     expo-constants: ^11.0.1
     expo-status-bar: ~1.0.4
     firebase: 8.2.3
-    lottie-react-native: ^4.1.3
+    lottie-react-native: 4.0.2
     prettier: ^2.4.1
     react: 16.13.1
     react-dom: 16.13.1
+    react-hook-form: ^7.17.2
     react-native: "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz"
     react-native-gesture-handler: ^1.10.3
     react-native-web: ~0.13.12

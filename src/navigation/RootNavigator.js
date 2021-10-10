@@ -3,9 +3,9 @@ import { NavigationContainer } from "@react-navigation/native";
 import { View, ActivityIndicator } from "react-native";
 
 import Firebase from "../../config/firebase";
-import { AuthenticatedUserContext } from "./AuthenticatedUserProvider";
-import AuthStack from "./AuthStack";
-import HomeStack from "./HomeStack";
+import { AuthenticatedUserContext } from "./AuthStack/AuthenticatedUserProvider";
+import AuthStack from "./AuthStack/AuthStack";
+import HomeStack from "./HomeStack/HomeStack";
 
 const auth = Firebase.auth();
 
@@ -18,7 +18,6 @@ export default function RootNavigator() {
     const unsubscribeAuth = auth.onAuthStateChanged(async authenticatedUser => {
       try {
         if (authenticatedUser) {
-          console.log("authenticatedUser", authenticatedUser);
           await setUser(authenticatedUser);
         } else {
           setUser(null);
@@ -43,7 +42,8 @@ export default function RootNavigator() {
 
   return (
     <NavigationContainer>
-      {user ? <HomeStack /> : <AuthStack />}
+    {user ? <HomeStack /> : <AuthStack />}
+   {/*   <HomeStack />  */}
     </NavigationContainer>
   );
 }

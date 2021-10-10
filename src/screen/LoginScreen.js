@@ -15,8 +15,8 @@ export default function LoginScreen({ navigation }) {
   const [passwordVisibility, setPasswordVisibility] = useState(true);
   const [rightIcon, setRightIcon] = useState("eye");
   const [loginError, setLoginError] = useState("");
-  const animation = useRef(null);
-  const handlePasswordVisibility = () => {
+  /*   const animation = useRef(null);
+   */ const handlePasswordVisibility = () => {
     if (rightIcon === "eye") {
       setRightIcon("eye-off");
       setPasswordVisibility(!passwordVisibility);
@@ -35,29 +35,31 @@ export default function LoginScreen({ navigation }) {
       setLoginError(error.message);
     }
   };
-  const onPress = () => {
+  /*   const onPress = () => {
     animation.current.play();
-  };
-  useEffect(() => {
-    if (animation) {
-      animation.current?.play();
-    }
-  }, []);
+  }; */
   return (
     <View style={styles.container}>
       <StatusBar style="dark-content" />
-      <LottieView
-        ref={animation}
+      <View
         style={{
-          backgroundColor: "#eee"
-        }}
-        source={require("../../assets/ball.json")}
-        // OR find more Lottie files @ https://lottiefiles.com/featured
-        // Just click the one you like, place that file in the 'assets' folder to the left, and replace the above 'require' statement
-      />
-      <Text style={styles.title} onPress={onPress}>
-        Login
-      </Text>
+          flex: 0,
+          flexDirection: "row",
+          justifyContent: "center",
+        }}>
+        <LottieView
+         
+          style={{
+            marginLeft: 80,
+            marginBottom: 10,
+          }}
+          source={require("../../assets/box.json")}
+          autoPlay
+        />
+        <Text style={styles.title}>
+          Login
+        </Text>
+      </View>
       <InputField
         inputStyle={{
           fontSize: 14,

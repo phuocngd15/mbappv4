@@ -4,14 +4,13 @@ import { StyleSheet, Text, View } from "react-native";
 
 import { IconButton } from "../components";
 import Firebase from "../../config/firebase";
-import { AuthenticatedUserContext } from "../navigation/AuthenticatedUserProvider";
+import { AuthenticatedUserContext } from "../navigation/AuthStack/AuthenticatedUserProvider";
 import { useSelector } from "react-redux";
-
+  
 const auth = Firebase.auth();
 
 export default function HomeScreen() {
   const { user } = useContext(AuthenticatedUserContext);
-  console.log("user",user)
   // const user = useSelector(state => state.user)
   const handleSignOut = async () => {
     try {
@@ -24,15 +23,15 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <StatusBar style="dark-content" />
       <View style={styles.row}>
-        <Text style={styles.title}>Welcome {user.email}!</Text>
+        <Text style={styles.title}>Welcome {user?.email}!</Text>
         <IconButton
           name="logout"
           size={24}
-          color="#fff"
+          color="#111"
           onPress={handleSignOut}
         />
       </View>
-      <Text style={styles.text}>Your UID is: {user.uid} </Text>
+      <Text style={styles.text}>Your UID is: {user?.uid} </Text>
     </View>
   );
 }
@@ -40,7 +39,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#e93b81",
+    backgroundColor: "#fff",
     paddingTop: 50,
     paddingHorizontal: 12,
   },
@@ -53,11 +52,11 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 24,
     fontWeight: "600",
-    color: "#fff",
+    color: "#111",
   },
   text: {
     fontSize: 16,
     fontWeight: "normal",
-    color: "#fff",
+    color: "#111",
   },
 });
