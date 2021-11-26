@@ -1608,6 +1608,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@expo/config-plugins@npm:^4.0.2":
+  version: 4.0.6
+  resolution: "@expo/config-plugins@npm:4.0.6"
+  dependencies:
+    "@expo/config-types": ^43.0.1
+    "@expo/json-file": 8.2.33
+    "@expo/plist": 0.0.15
+    "@react-native/normalize-color": ^2.0.0
+    chalk: ^4.1.2
+    debug: ^4.3.1
+    find-up: ~5.0.0
+    fs-extra: 9.0.0
+    getenv: ^1.0.0
+    glob: 7.1.6
+    resolve-from: ^5.0.0
+    semver: ^7.3.5
+    slash: ^3.0.0
+    xcode: ^3.0.1
+    xml2js: 0.4.23
+  checksum: d0b200086938a105ccbf1b0db732df5b8fa751848530145f91801e77c5a17d9e25f74977700a776f17c52b218f7c21ff128c7ed780f1395541b9e156984e9708
+  languageName: node
+  linkType: hard
+
 "@expo/config-types@npm:^41.0.0":
   version: 41.0.0
   resolution: "@expo/config-types@npm:41.0.0"
@@ -1619,6 +1642,13 @@ __metadata:
   version: 42.0.0
   resolution: "@expo/config-types@npm:42.0.0"
   checksum: e9b14f81c0b360dc872e5652a2d449f0f15508853690af948b0c363a96398850e3e7ee712f20d6f7c5eefd351f3c559419e35a7a894297a56abf94ede0d9cd53
+  languageName: node
+  linkType: hard
+
+"@expo/config-types@npm:^43.0.1":
+  version: 43.0.1
+  resolution: "@expo/config-types@npm:43.0.1"
+  checksum: d9bed685dd5f028ea6152efba1a1cb3018adc6e17c4a09a750fc3ecda148ea60f721075ea0233cd90b7eb8a1f8e74e33688cd57bd6f6c46ab521adc4cebfec8b
   languageName: node
   linkType: hard
 
@@ -1717,6 +1747,17 @@ __metadata:
     base64-js: ^1.2.3
     xmlbuilder: ^14.0.0
   checksum: 9bfd1fe9912166dc7de0c3af250c1c5262374a64fec8fed6b392934edbbec92c424fffd143bcb17f6655682e2e50c2112592fbdb13d1c32da86182662a78ba0e
+  languageName: node
+  linkType: hard
+
+"@expo/plist@npm:0.0.15":
+  version: 0.0.15
+  resolution: "@expo/plist@npm:0.0.15"
+  dependencies:
+    "@xmldom/xmldom": ~0.7.0
+    base64-js: ^1.2.3
+    xmlbuilder: ^14.0.0
+  checksum: 65b10172bbdc1d0e037094ab10b787c1ff01549f30ada96a0a47ae2e1a388cf26a03ce41bd7eeee7036585c60c3a9a589fbb6522ba38f5da8c1e3d03160876b9
   languageName: node
   linkType: hard
 
@@ -2460,6 +2501,13 @@ __metadata:
   bin:
     react-native: build/bin.js
   checksum: fe0fdcfaa459495b4977f42d41d5279b5ba2b9680ab8ae3d4fda3780e00e769ffe4aefb5ba2526744932c96477dcde5c7394837ea7493f80d363114200beada9
+  languageName: node
+  linkType: hard
+
+"@react-native/normalize-color@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@react-native/normalize-color@npm:2.0.0"
+  checksum: 2da373297f0d22b700edb9ab1b2cca34684e94a5dfe172e1cfd114e74ac17e139e802bc671e9868e0a580190eccbf3fa804f67be8cc1d9cbd0e216e994495931
   languageName: node
   linkType: hard
 
@@ -4653,6 +4701,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-barcode-scanner@npm:^11.1.2":
+  version: 11.1.2
+  resolution: "expo-barcode-scanner@npm:11.1.2"
+  dependencies:
+    "@expo/config-plugins": ^4.0.2
+    expo-image-loader: ~3.0.0
+    expo-modules-core: ~0.4.4
+  checksum: f6a41da60869c292fa2cab6f9a1698b1404e9581b464172d00a135dff7f008d3f21fb293bacf52f979a151677b1c3ba0e2b4d59017801cdbe5000c91fac631e3
+  languageName: node
+  linkType: hard
+
 "expo-constants@npm:^11.0.1":
   version: 11.1.0
   resolution: "expo-constants@npm:11.1.0"
@@ -4703,6 +4762,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-image-loader@npm:~3.0.0":
+  version: 3.0.0
+  resolution: "expo-image-loader@npm:3.0.0"
+  checksum: ace339dd75438aff542441d716c8eec7bb155c591f43dd8eea90e2cb5edb6b67e457f73257980cc5c55c699b37bac1c03cf1606387df65ec571c8beb802b6030
+  languageName: node
+  linkType: hard
+
 "expo-keep-awake@npm:~9.2.0":
   version: 9.2.0
   resolution: "expo-keep-awake@npm:9.2.0"
@@ -4739,6 +4805,16 @@ __metadata:
     compare-versions: ^3.4.0
     invariant: ^2.2.4
   checksum: 0861be8bcf5a78efdd643a2e70cded84366a98876b2ed31b851487595b20884b55916ae7fc1ca42817a9dd1826e635080287c665bb30772484c2c031e35c229e
+  languageName: node
+  linkType: hard
+
+"expo-modules-core@npm:~0.4.4":
+  version: 0.4.4
+  resolution: "expo-modules-core@npm:0.4.4"
+  dependencies:
+    compare-versions: ^3.4.0
+    invariant: ^2.2.4
+  checksum: d97051027658e37830024f6d74f6bf194bb2e5344a9c007677688928336d9b943bdec9455e206bb12fe5aede3be75c0f4bdef9922a1d519bd22ac3245c05d305
   languageName: node
   linkType: hard
 
@@ -6458,7 +6534,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.4, lodash@npm:^4.3.0":
+"lodash@npm:^4.17.13, lodash@npm:^4.17.14, lodash@npm:^4.17.15, lodash@npm:^4.17.21, lodash@npm:^4.17.4, lodash@npm:^4.3.0":
   version: 4.17.21
   resolution: "lodash@npm:4.17.21"
   checksum: eb835a2e51d381e561e508ce932ea50a8e5a68f4ebdd771ea240d3048244a8d13658acbd502cd4829768c56f2e16bdd4340b9ea141297d472517b83868e677f7
@@ -7981,6 +8057,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-native-animatable@npm:^1.3.3":
+  version: 1.3.3
+  resolution: "react-native-animatable@npm:1.3.3"
+  dependencies:
+    prop-types: ^15.7.2
+  checksum: eb35821de36ae4eb00f97d99fc22ed79bd017248092ff1299f9d46a7ab946de16d2e6d6bfbf4cab5ef77d0d3bf47684aec761a7670ec7d36aae8d77ab8ddd171
+  languageName: node
+  linkType: hard
+
 "react-native-gesture-handler@npm:^1.10.3":
   version: 1.10.3
   resolution: "react-native-gesture-handler@npm:1.10.3"
@@ -8442,15 +8527,18 @@ fsevents@^1.2.7:
     eslint-config-standard: ^11.0.0
     eslint-friendly-formatter: ^3.0.0
     expo: ~42.0.1
+    expo-barcode-scanner: ^11.1.2
     expo-constants: ^11.0.1
     expo-status-bar: ~1.0.4
     firebase: 8.2.3
+    lodash: ^4.17.21
     lottie-react-native: 4.0.2
     prettier: ^2.4.1
     react: 16.13.1
     react-dom: 16.13.1
     react-hook-form: ^7.17.2
     react-native: "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz"
+    react-native-animatable: ^1.3.3
     react-native-gesture-handler: ^1.10.3
     react-native-web: ~0.13.12
     react-redux: ^7.2.5
@@ -9791,7 +9879,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"xml2js@npm:^0.4.23":
+"xml2js@npm:0.4.23, xml2js@npm:^0.4.23":
   version: 0.4.23
   resolution: "xml2js@npm:0.4.23"
   dependencies:

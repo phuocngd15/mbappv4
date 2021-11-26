@@ -7,25 +7,27 @@ import {
   VirtualizedList,
   SafeAreaView,
   Pressable,
-  Image
+  Image,
 } from "react-native";
 import CreateProduct from "./Create";
 import { dataMock } from "./Mock";
-
+import { v3 } from "lodash";
 export default function ReadProductScreen({ navigation }) {
   return (
     <SafeAreaView>
       <VirtualizedList
+
         data={dataMock}
         initialNumToRender={4}
         renderItem={({ item }) => (
           <Item
+            key={v3}
             title={item.title}
             nav={navigation}
             queryId={item.detailQuery}
           />
         )}
-        keyExtractor={item => item.key}
+        keyExtractor={v3}
         getItemCount={getItemCount}
         getItem={getItem}
       />
@@ -58,12 +60,12 @@ const Item = ({ title, nav, queryId }) => (
       />
       <View>
         <Text style={styles.title}>Ten san pham:{title}</Text>
-        <Text style={styles.itemContent}>{"\n"}aaa</Text>
+        <Text style={styles.itemContent}>aaa</Text>
       </View>
     </View>
   </Pressable>
 );
-
+// styles doi ten thanh cai khac duoc ne
 const styles = StyleSheet.create({
   container: {
     flex: 1,

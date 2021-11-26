@@ -1,8 +1,9 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import RootHomeBottomTabNavigator from "./RootHomeBottomTabNavigator";
-import HomeScreen from "../../screen/HomeScreen";
-import CreateProduct from "../../screen/products/CRUD/Create";
+import HomeScreen from "../../Screens/HomeScreen";
+import CreateProduct from "../../Screens/Products/Functions/Create";
+import SearchScreen from "../../Screens/Search/Functions/Create";
 
 const Stack = createStackNavigator();
 
@@ -27,9 +28,9 @@ export default function HomeStack() {
         component={NotFoundScreen}
         options={{ title: "Oops!" }}
       /> */}
-      <Stack.Group screenOptions={{ presentation: "modal" }}>
-      </Stack.Group>
-        <Stack.Screen name="Create" component={CreateProduct} />
+      <Stack.Group screenOptions={{ presentation: "modal" }}></Stack.Group>
+      <Stack.Screen name="Create" component={CreateProduct} />
+      <Stack.Screen name="SearchScreen" component={SearchScreen} />
     </Stack.Navigator>
   );
 }

@@ -2,9 +2,9 @@ import { StatusBar } from "expo-status-bar";
 import React, { useContext } from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-import { IconButton } from "../components";
+import { IconButton } from "../Components";
 import Firebase from "../../config/firebase";
-import { AuthenticatedUserContext } from "../navigation/AuthStack/AuthenticatedUserProvider";
+import { AuthenticatedUserContext } from "../Navigation/AuthStack/AuthenticatedUserProvider";
 import { useSelector } from "react-redux";
   
 const auth = Firebase.auth();

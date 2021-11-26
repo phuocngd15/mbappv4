@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import { StyleSheet, Text, View, Button as RNButton } from "react-native";
 
-import { Button, InputField, ErrorMessage } from "../components";
+import { Button, InputField, ErrorMessage } from "../Components";
 import Firebase from "../../config/firebase";
 import LottieView from "lottie-react-native";
 

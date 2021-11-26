@@ -42,8 +42,8 @@ export default function RootNavigator() {
 
   return (
     <NavigationContainer>
-    {user ? <HomeStack /> : <AuthStack />}
-   {/*   <HomeStack />  */}
+  {/*   {user ? <HomeStack /> : <AuthStack />} */}
+    <HomeStack /> 
     </NavigationContainer>
   );
 }
